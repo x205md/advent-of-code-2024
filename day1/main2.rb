@@ -1,8 +1,7 @@
 input_file = './input.txt'
 
 left_list = []
-right_list = {}
-right_list.default = 0
+right_list = Hash.new(0)
 
 File.foreach(input_file) do |line|
   left, right = line.chomp.split

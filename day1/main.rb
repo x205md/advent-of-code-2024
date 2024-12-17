@@ -16,5 +16,8 @@ acc = 0
 left_list.each_with_index do |left, i|
   acc += (left - right_list[i]).abs
 end
+# acc = left_list.zip(right_list).reduce(0) do |a, l|
+  # a + (l[0] - l[1]).abs
+# end 
 
 print "Distance : #{acc}\n"
